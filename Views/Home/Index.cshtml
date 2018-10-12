@@ -1,0 +1,65 @@
+﻿@model HomeViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<a class='btn btn-success' style='margin-left:15px;' id='btnAdd' asp-page='/Add' name='btnAdd'>Add</a>
+<table id="grid" name="grid" class="table table-striped table-bordered" style="width:100%;">
+    <thead>
+            <tr>
+                <th></th>
+                <th>Date</th>
+                <th>Customer</th>
+                <th>Project</th>
+                <th>Amount</th>
+                <th></th>
+            </tr>
+        </thead>
+<tbody>
+    @foreach(var exp in Model.Expenses)
+    {
+        <tr>
+            <td>
+                <a asp-page="/Edit" asp-route-id="@exp.ExpenseId">edit</a>
+            </td>
+            <td>
+            @exp.ExpenseDate
+        </td>
+        <td>
+            @exp.Project.Customer.CustomerName
+        </td>
+        <td>
+            @exp.Project.ProjectName
+        </td>
+        <td>
+            @exp.Amount
+        </td>
+        <td>
+            <a asp-page-handler="delete" asp-route-id="@exp.ExpenseId">delete</a>
+        </td>
+        </tr>
+    }
+</tbody>
+</table> 
+
+<script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+    var table = $('#grid').DataTable();
+    $( "input[type='search']").addClass( "form-control" ).attr("placeholder", "type to search");
+    $( "#grid_filter").addClass( "form-group form-inline" )
+    .append("<button type='button' class='btn btn-danger' style='margin-left:15px;' id='btnClearFilter' name='btnClearFilter'>Clear</button>")
+    .append("<a class='btn btn-success' style='margin-left:15px;' id='btnAdd' asp-page='/Add' name='btnAdd'>Add</a>");
+
+$("#btnClearFilter").click(function(){
+        $("input[type='search']").val('');
+        /*var table = $('#grid').DataTable();*/
+        //table.draw();
+    });
+} );
+
+
+</script>

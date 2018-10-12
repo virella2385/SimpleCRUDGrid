@@ -1,0 +1,63 @@
+﻿@page "{id}/{cid?}"
+@model EditModel
+
+@{
+	
+}
+
+<form method="post">
+	<div>
+		<h1>Expenses - Edit</h1>
+	</div>
+	<input type="hidden" asp-for="editExpense.ExpenseId" />
+	<input type="hidden" asp-for="editExpense.Project.ProjectName" />
+	<div class="form-group">
+		<label asp-for="editExpense.ExpenseDate"></label>
+		<input type="date" class="form-control" id="txtExpenseDate" style="width:15%;" asp-for="editExpense.ExpenseDate" />
+		<span asp-validation-for="editExpense.ExpenseDate"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="editExpense.ExpenseName"></label>
+		<input type="text" class="form-control" style="width:15%;" asp-for="editExpense.ExpenseName" />
+		&nbsp;
+		<span asp-validation-for="editExpense.ExpenseName"></span>
+	</div>
+	<div class="form-group">
+		<label>Select a customer</label>
+		<select asp-for="editExpense.Project.Customer.CustomerId" asp-items="Model.customers" onchange="reloadDDL();"></select>
+		<span asp-validation-for="editExpense.Project.Customer.CustomerId"></span>
+	</div>
+	<div class="form-group">
+	<label>Select a project</label>
+	<select asp-for="editExpense.Project.ProjectId" asp-items="Model.projects"></select>
+	<span asp-validation-for="editExpense.Project.ProjectId"></span>
+</div>
+	<div class="form-group">
+		<label asp-for="editExpense.Amount"></label>
+		<input type="number" class="form-control" style="width:15%;" asp-for="editExpense.Amount" />
+		<span asp-validation-for="editExpense.Amount"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="editExpense.Description"></label>
+		<textarea class="form-control" style="width:36%;" asp-for="editExpense.Description"></textarea>
+	</div>
+
+
+
+
+<div>
+
+<input type="submit" class="btn btn-success" value="Save"/>
+
+&nbsp;
+<input type="submit" class="btn btn-primary" value="Apply" asp-route-isapply="1"/>
+&nbsp;
+<button class="btn btn-default" asp-action="Index">Cancel</button>
+</form>
+
+<script type="text/javascript">
+	function reloadDDL(){
+		var cid = $("#editExpense_Project_Customer_CustomerId").find(":selected").val();
+		location.pathname = "/Edit/@Html.Raw(Model.editExpense.ExpenseId)/" + cid;
+	}
+</script>

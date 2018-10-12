@@ -1,0 +1,1262 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sa",
+				"SaveChangesAsync()\tTask<int>"
+			],
+			[
+				"PRo",
+				"Project\tProject"
+			],
+			[
+				"requ",
+				"RequiredAttribute\tRequiredAttribute"
+			],
+			[
+				"wi",
+				"WithOne()\tReferenceReferenceBuilder<Expense, Project>"
+			],
+			[
+				"has",
+				"HasOne()\tReferenceNavigationBuilder<Expense, TRelatedEntity>"
+			],
+			[
+				"enti",
+				"Entity<TEntity>()\tEntityTypeBuilder<TEntity>"
+			],
+			[
+				"p",
+				"ProjectId\tint"
+			],
+			[
+				"Redi",
+				"RedirectToPage()\tRedirectToPageResult"
+			],
+			[
+				"Bad",
+				"BadRequest(object error)\tBadRequestObjectResult"
+			],
+			[
+				"new",
+				"newExpense\tExpense"
+			],
+			[
+				"C",
+				"CustomerId"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"Selc",
+				"SelectListItem\tSelectListItem"
+			],
+			[
+				"exp",
+				"ExpenseId\tint"
+			],
+			[
+				"g",
+				"Get(int id)\tExpense"
+			],
+			[
+				"Edi",
+				"EditModel\tEditModel"
+			],
+			[
+				"ex",
+				"expenseDate\tDateTime"
+			],
+			[
+				"redirecttoa",
+				"RedirectToAction(string actionName)\tRedirectToActionResult"
+			],
+			[
+				"cu",
+				"currentExpense\tExpense"
+			],
+			[
+				"e",
+				"GetExpense(int id)\tExpense"
+			],
+			[
+				"fi",
+				"FirstOrDefault()\tExpense"
+			],
+			[
+				"pro",
+				"ProjectName\tstring"
+			],
+			[
+				"get",
+				"GetProjects()\tIEnumerable<Project>"
+			],
+			[
+				"edi",
+				"editExpense\tEditExpenseModel"
+			],
+			[
+				"bind",
+				"BindPropertyAttribute\tBindPropertyAttribute"
+			],
+			[
+				"Selec",
+				"SelectListItem\tSelectListItem"
+			],
+			[
+				"Selel",
+				"SelectListItem\tSelectListItem"
+			],
+			[
+				"Val",
+				"value\tstring"
+			],
+			[
+				"selec",
+				"SelectListItem\tSelectListItem"
+			],
+			[
+				"re",
+				"returnList\tList<SelectListItem>"
+			],
+			[
+				"for",
+				"foreach\tforeach"
+			],
+			[
+				"Sel",
+				"SelectListItem\tSelectListItem"
+			],
+			[
+				"Bin",
+				"BindPropertyAttribute\tBindPropertyAttribute"
+			],
+			[
+				"Bind",
+				"BindAttribute\tBindAttribute"
+			],
+			[
+				"sele",
+				"SelectListItem()\tSelectListItem()"
+			],
+			[
+				"Dat",
+				"DataTable"
+			],
+			[
+				"form-",
+				"form-group"
+			],
+			[
+				"to",
+				"ToList()\tList<Company>"
+			],
+			[
+				"IQ",
+				"IQueryable<T>\tIQueryable<T>"
+			],
+			[
+				"order",
+				"OrderByDescending(Func<Company, TKey> keySelector)\tIOrderedEnumerable<Company>"
+			],
+			[
+				"Hme",
+				"HomeViewModel()\tHomeViewModel()"
+			],
+			[
+				"Home",
+				"HomeViewModel\tHomeViewModel"
+			],
+			[
+				"Application",
+				"ApplicationDbContext\tApplicationDbContext"
+			],
+			[
+				"hom",
+				"HomeViewModel()\tHomeViewModel()"
+			],
+			[
+				"con",
+				"Configuration"
+			],
+			[
+				"Pro",
+				"Project\tProject"
+			],
+			[
+				"en",
+				"Entity<TEntity>()\tEntityTypeBuilder<TEntity>"
+			],
+			[
+				"model",
+				"modelBuilder\tmodelBuilder"
+			],
+			[
+				"dta",
+				"DataType\tDataType"
+			],
+			[
+				"AddRedirectT",
+				"AddRedirectToHttpsPermanent()\tRewriteOptions"
+			],
+			[
+				"add",
+				"AddRedirectToHttps()\tRewriteOptions"
+			],
+			[
+				"RewriteOpti",
+				"RewriteOptions()\tRewriteOptions()"
+			],
+			[
+				"IVi",
+				"IViewComponentResult\tIViewComponentResult"
+			],
+			[
+				"BindP",
+				"BindPropertyAttribute\tBindPropertyAttribute"
+			],
+			[
+				"redirectToAc",
+				"RedirectToAction(string actionName, object routeValues)\tRedirectToActionResult"
+			],
+			[
+				"Moel",
+				"ModelBinderAttribute\tModelBinderAttribute"
+			],
+			[
+				"sql",
+				"sqlRestaurantData\tsqlRestaurantData"
+			],
+			[
+				"getc",
+				"GetConnectionString(string name)\tstring"
+			],
+			[
+				"usesq",
+				"UseSqlServer(DbConnection connection)\tDbContextOptionsBuilder"
+			],
+			[
+				"test",
+				"TestDotnetCoreWebAppDbContext\tTestDotnetCoreWebAppDbContext"
+			],
+			[
+				"adddbc",
+				"AddDbContext<TContextService, TContextImplementation>()\tIServiceCollection"
+			],
+			[
+				"Test",
+				"TestDotnetCoreWebAppDbContext\tTestDotnetCoreWebAppDbContext"
+			],
+			[
+				"Db",
+				"DbContextOptions\tDbContextOptions"
+			],
+			[
+				"tok",
+				"ValidateAntiForgeryTokenAttribute\tValidateAntiForgeryTokenAttribute"
+			],
+			[
+				"Model",
+				"ModelState\tModelStateDictionary"
+			],
+			[
+				"maxl",
+				"MaxLengthAttribute(int length)\tMaxLengthAttribute(int length)"
+			],
+			[
+				"requi",
+				"RequiredAttribute()\tRequiredAttribute()"
+			],
+			[
+				"_",
+				"_restaurantData\tIRestaurantData"
+			],
+			[
+				"i",
+				"IActionResult\tIActionResult"
+			],
+			[
+				"ig",
+				"IGreeter\tIGreeter"
+			],
+			[
+				"res",
+				"restarantData\trestarantData"
+			],
+			[
+				"obj",
+				"ObjectResult\tObjectResult"
+			],
+			[
+				"r",
+				"Routing\tRouting"
+			],
+			[
+				"ma",
+				"MapRoute(string name, string template)\tIRouteBuilder"
+			],
+			[
+				"rout",
+				"routeBuilder\trouteBuilder"
+			],
+			[
+				"usemvc",
+				"UseMvcWithDefaultRoute()\tIApplicationBuilder"
+			],
+			[
+				"def",
+				"DefaultFilesOptions\tDefaultFilesOptions"
+			],
+			[
+				"usede",
+				"UseDefaultFiles()\tIApplicationBuilder"
+			],
+			[
+				"use",
+				"UseStaticFiles()\tIApplicationBuilder"
+			],
+			[
+				"lo",
+				"LogInformation(string message, params object[] args)\tvoid"
+			],
+			[
+				"wel",
+				"WelcomePageOptions\tWelcomePageOptions"
+			],
+			[
+				"usewe",
+				"UseWelcomePage()\tIApplicationBuilder"
+			],
+			[
+				"addsing",
+				"AddSingleton<TService, TImplementation>()\tIServiceCollection"
+			],
+			[
+				"fir",
+				"firstName"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Pages/Edit.cshtml",
+			"settings":
+			{
+				"buffer_size": 2197,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Pages/Edit.cshtml.cs",
+			"settings":
+			{
+				"buffer_size": 6075,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Pages/Add.cshtml",
+			"settings":
+			{
+				"buffer_size": 1978,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Models/AddExpenseModel.cs",
+			"settings":
+			{
+				"buffer_size": 818,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Pages/Add.cshtml.cs",
+			"settings":
+			{
+				"buffer_size": 2017,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Views/Home/Index.cshtml",
+			"settings":
+			{
+				"buffer_size": 1863,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Controllers/HomeController.cs",
+			"settings":
+			{
+				"buffer_size": 2115,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Models/Expense.cs",
+			"settings":
+			{
+				"buffer_size": 678,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Services/SqlGridData.cs",
+			"settings":
+			{
+				"buffer_size": 2091,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"fix",
+				"OmniSharpSublime: Fix Usings"
+			],
+			[
+				"re",
+				"OmniSharpSublime: Restart Server"
+			],
+			[
+				"res",
+				"OmniSharpSublime: Restart Server"
+			],
+			[
+				"new cl",
+				"OmniSharpSublime: Add New Class"
+			],
+			[
+				"add ",
+				"Project: Add Folder"
+			],
+			[
+				"add new",
+				"OmniSharpSublime: Add New Class"
+			],
+			[
+				"add f",
+				"Project: Add Folder"
+			],
+			[
+				"folder",
+				"Project: Add Folder"
+			],
+			[
+				"om",
+				"OmniSharpSublime: Add New Class"
+			],
+			[
+				"snippet",
+				"Snippet: Class"
+			],
+			[
+				"set c#",
+				"Set Syntax: C#"
+			],
+			[
+				"fix u",
+				"OmniSharpSublime: Fix Usings"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"using",
+				"Snippet: Using"
+			],
+			[
+				"refe",
+				"OmniSharpSublime: Add Reference"
+			],
+			[
+				"class",
+				"OmniSharpSublime: Add New Class"
+			],
+			[
+				"forma",
+				"JSCS Formatter: Format this file"
+			],
+			[
+				"termin",
+				"Terminal: Open in project folder"
+			],
+			[
+				"rest",
+				"OmniSharpSublime: Restart Server"
+			],
+			[
+				"add class",
+				"OmniSharpSublime: Add New Class"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"publi",
+				"Snippet: Public Method"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"raz",
+				"Set Syntax: razor"
+			],
+			[
+				"snippet publi",
+				"Snippet: Public Method"
+			],
+			[
+				"FIX",
+				"OmniSharpSublime: Fix Usings"
+			],
+			[
+				"snippet pro",
+				"Snippet: Property (Read-Write)"
+			],
+			[
+				"cons",
+				"Snippet: Constructor"
+			],
+			[
+				"snip",
+				"Snippet: html"
+			],
+			[
+				"snipp",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"",
+				"Compare with..."
+			],
+			[
+				"omni ht",
+				"OmniSharpSublime: Add New Interface"
+			],
+			[
+				"omnisharp",
+				"OmniSharpSublime: Fix Usings"
+			],
+			[
+				"snippet ",
+				"Snippet: Class"
+			],
+			[
+				"snipper me",
+				"Snippet: Private Method"
+			],
+			[
+				"sni",
+				"Snippet: Private Method"
+			],
+			[
+				"code i",
+				"OmniSharpSublime: Fix Code Issue"
+			],
+			[
+				"comment",
+				"Toggle Block Comment"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"code ac",
+				"OmniSharpSublime: Fix Code Issue"
+			],
+			[
+				"terminalvi",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"terminal",
+				"Terminal: Open in project folder"
+			],
+			[
+				"git",
+				"Set Syntax: Git Log"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"compa",
+				"Compare with..."
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"them",
+				"UI: Select Theme"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"enabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 275.0,
+		"history":
+		[
+			"git"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Controllers",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Data",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Models",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Pages",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Services",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Views",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Views/Home",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Views/Shared",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/wwwroot",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/wwwroot/css"
+	],
+	"file_history":
+	[
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Data/ApplicationDbContext.cs",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Views/Home/Index.cshtml",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Services/ISqlGridData.cs",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Models/Customer.cs",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Models/Project.cs",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Controllers/HomeController.cs",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/wwwroot/css/site.css",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Models/EditExpenseModel.cs",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Models/Expense.cs",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Pages/_ViewImports.cshtml",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Services/SqlGridData.cs",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Pages/_ViewStart.cshtml",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Views/Shared/_Layout.cshtml",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Models/Company.cs",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Models/ViewModels/HomeViewModel.cs",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/appsettings.Development.json",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/SimpleCRUDGrid.sublime-project",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Startup.cs",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Properties/launchSettings.json",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/Views/_ViewImports.cshtml",
+		"/Users/alakratt/Documents/github/SimpleCRUDGridWebApp/SimpleCRUDGridWebApp.sln",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Views/Home/Index.cshtml",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Views/Shared/_Layout.cshtml",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Views/_ViewImports.cshtml",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Startup.cs",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/appsettings.Development.json",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/appsettings.json",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/README.md",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/ViewComponents/GreeterViewComponent.cs",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Views/Shared/Components/Greeter/Default.cshtml",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Services/SqlRestaurantData.cs",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Services/IRestaurantData.cs",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Services/InMemoryRestaurantData.cs",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Pages/Base.cshtml",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Pages/Base.cshtml.cs",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Controllers/HomeController.cs",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Data/TestDotnetCoreWebAppDbContext.cs",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Pages/_ViewStart.cshtml",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Views/Home/Create.cshtml",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Views/_ViewStart.cshtml",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/ViewModels/Home/HomeIndexViewModel.cs",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Views/Home/Details.cshtml",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Models/Restaurant.cs",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/ViewModels/Home/RestaurantEditModel.cs",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Models/CuisineType.cs",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/TestNetCoreWebApp.csproj",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Controllers/AboutController.cs",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Services/IGreeter.cs",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/.gitignore",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/IGreeter.cs",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/appsettings.production.json",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/wwwroot/index.html",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Properties/launchSettings.json",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/TestNetCoreWebApp.sublime-project",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/Program.cs",
+		"/Users/alakratt/Documents/github/DotnetCoreFundamentals/TestNetCoreWebApp/TestNetCoreWebApp.sln",
+		"/Users/alakratt/Library/Application Support/Sublime Text 3/Packages/OmniSharp/OmniSharpSublime.sublime-settings",
+		"/Users/alakratt/Documents/github/pluralsight_test1/src/routes/authorRoutes.js",
+		"/Users/alakratt/Documents/github/pluralsight_test1/gulpfile.js",
+		"/Users/alakratt/Documents/test_proj1/.jscsrc",
+		"/Users/alakratt/Documents/test_proj1/.jshintrc",
+		"/Users/alakratt/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/alakratt/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/alakratt/Documents/test_proj1/test_js2.js",
+		"/Users/alakratt/Library/Application Support/Sublime Text 3/Packages/JSCS-Formatter/JSCS-Formatter.sublime-settings",
+		"/Users/alakratt/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/.jshintrc",
+		"/Users/alakratt/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/JSHint.sublime-settings"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"editExpense"
+		],
+		"highlight": true,
+		"in_selection": true,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"addExpense"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Pages/Edit.cshtml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2197,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2196,
+								0
+							]
+						],
+						"settings":
+						{
+							"SL.124.region_keys":
+							[
+							],
+							"SL.29.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"SL.31.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"syntax": "Packages/Razor/Razor.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Pages/Edit.cshtml.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6075,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3071,
+								3197
+							]
+						],
+						"settings":
+						{
+							"SL.125.region_keys":
+							[
+							],
+							"SL.30.region_keys":
+							[
+							],
+							"SL.32.region_keys":
+							[
+							],
+							"oops":
+							{
+								"4322,4327": "'Expense' does not contain a definition for 'GetAwaiter' and no accessible extension method 'GetAwaiter' accepting a first argument of type 'Expense' could be found (are you missing a using directive or an assembly reference?)"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1291.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Pages/Add.cshtml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								675,
+								675
+							]
+						],
+						"settings":
+						{
+							"SL.40.region_keys":
+							[
+							],
+							"syntax": "Packages/Razor/Razor.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Models/AddExpenseModel.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 818,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								654,
+								654
+							]
+						],
+						"settings":
+						{
+							"SL.45.region_keys":
+							[
+							],
+							"oops":
+							{
+								"125,133": "The type or namespace name 'Required' could not be found (are you missing a using directive or an assembly reference?)",
+								"135,144": "The type or namespace name 'MaxLength' could not be found (are you missing a using directive or an assembly reference?)",
+								"195,203": "The type or namespace name 'Required' could not be found (are you missing a using directive or an assembly reference?)",
+								"245,253": "The type or namespace name 'Required' could not be found (are you missing a using directive or an assembly reference?)",
+								"294,302": "The type or namespace name 'Required' could not be found (are you missing a using directive or an assembly reference?)",
+								"313,321": "The type or namespace name 'DataType' could not be found (are you missing a using directive or an assembly reference?)",
+								"322,330": "The name 'DataType' does not exist in the current context",
+								"87,95": "The type or namespace name 'Datetime' could not be found (are you missing a using directive or an assembly reference?)"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Pages/Add.cshtml.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2017,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2017,
+								2017
+							]
+						],
+						"settings":
+						{
+							"SL.41.region_keys":
+							[
+							],
+							"oops":
+							{
+								"1992,1993": "} expected"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 25.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Views/Home/Index.cshtml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1863,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								955,
+								955
+							]
+						],
+						"settings":
+						{
+							"SL.44.region_keys":
+							[
+							],
+							"syntax": "Packages/Razor/Razor.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 63.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Controllers/HomeController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2115,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1079,
+								1079
+							]
+						],
+						"settings":
+						{
+							"SL.48.region_keys":
+							[
+							],
+							"oops":
+							{
+								"2113,2114": "Type or namespace definition, or end-of-file expected",
+								"26,31": "Unnecessary using directive.",
+								"45,50": "Unnecessary using directive."
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 177.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Models/Expense.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 678,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								395,
+								320
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Services/SqlGridData.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2091,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1286,
+								1286
+							]
+						],
+						"settings":
+						{
+							"SL.33.region_keys":
+							[
+							],
+							"SL.71.region_keys":
+							[
+							],
+							"oops":
+							{
+								"1266,1271": "The 'await' operator can only be used within an async method. Consider marking this method with the 'async' modifier and changing its return type to 'Task<Expense>'."
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 52.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 108.0
+	},
+	"output.exec":
+	{
+		"height": 125.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 125.0
+	},
+	"pinned_build_system": "",
+	"project": "SimpleCRUDGrid.sublime-project",
+	"replace":
+	{
+		"height": 91.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 294.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
