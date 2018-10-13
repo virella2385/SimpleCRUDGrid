@@ -12,5 +12,6 @@ namespace SimpleCRUDGridWebApp.Services
     	Expense GetExpense(int id);
     	Expense UpdateExpense(Expense newExpense);
         Expense AddExpense(Expense newExpense);
+        void DeleteExpense(int id);
     }
 }

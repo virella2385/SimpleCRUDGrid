@@ -59,5 +59,13 @@ namespace SimpleCRUDGridWebApp.Services
     		_context.SaveChanges();
     		return newExpense;
     	}
+
+        public void DeleteExpense(int id)
+        {
+            Expense deleteExpense = new Expense();
+            deleteExpense = _context.Expenses.FirstOrDefault(e => e.ExpenseId == id);
+            _context.Expenses.Remove(deleteExpense);
+            _context.SaveChanges();
+        }
     }
 }

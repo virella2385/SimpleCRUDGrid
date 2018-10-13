@@ -49,6 +49,12 @@ namespace SimpleCRUDGridWebApp.Controllers
             return View();
         }
 
+        public IActionResult Delete(int id)
+        {
+            _sqlData.DeleteExpense(id);
+            return RedirectToAction("Index", "Home");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
