@@ -25,7 +25,7 @@ namespace SimpleCRUDGridWebApp.Controllers
             //return View();
         }
 
-        public JsonResult GetTestJson() 
+        public JsonResult GetTestJson()
         {
             return new JsonResult(_sqlData.GetCustomers());
         }
@@ -61,18 +61,18 @@ namespace SimpleCRUDGridWebApp.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-       /* public async Task<IActionResult> OnGetDeleteAsync(int id)
-        {
-            var contact = await _db.Customers.FindAsync(id);
+        /* public async Task<IActionResult> OnGetDeleteAsync(int id)
+         {
+             var contact = await _db.Customers.FindAsync(id);
 
-            if (contact != null)
-            {
-                _db.Customers.Remove(contact);
-                await _db.SaveChangesAsync();
-            }
+             if (contact != null)
+             {
+                 _db.Customers.Remove(contact);
+                 await _db.SaveChangesAsync();
+             }
 
-            return RedirectToPage();
-        }*/
+             return RedirectToPage();
+         }*/
     }
 
     /* [HttpGetAttribute]

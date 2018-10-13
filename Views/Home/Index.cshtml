@@ -36,12 +36,33 @@
             @exp.Amount
         </td>
         <td>
-            <a asp-action="Delete" asp-route-id="@exp.ExpenseId">delete</a>
+            <a data-toggle="modal" data-target="#exampleModal" href="#" data-expid="@exp.ExpenseId">delete</a>
+            <!-- <a asp-action="Delete" asp-route-id="@exp.ExpenseId">delete</a> -->
         </td>
         </tr>
     }
 </tbody>
 </table> 
+
+<div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Confirmation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to delete?</p>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary" id="btnYesDelete">Yes</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
 
@@ -51,8 +72,14 @@
     var table = $('#grid').DataTable();
     $( "input[type='search']").addClass( "form-control" ).attr("placeholder", "type to search");
     $( "#grid_filter").addClass( "form-group form-inline" )
-    .append("<button type='button' class='btn btn-danger' style='margin-left:15px;' id='btnClearFilter' name='btnClearFilter'>Clear</button>")
-    .append("<a class='btn btn-success' style='margin-left:15px;' id='btnAdd' asp-page='/Add' name='btnAdd'>Add</a>");
+    .append("<button type='button' class='btn btn-danger' style='margin-left:15px;' id='btnClearFilter' name='btnClearFilter'>Clear</button>");
+    //.append("<a class='btn btn-success' style='margin-left:15px;' id='btnAdd' asp-page='/Add' name='btnAdd'>Add</a>");
+
+    $('#exampleModal').on('show.bs.modal', function (event) {
+        var button  = $(event.relatedTarget);
+        var buttonData = button.data('expid');
+        $('#btnYesDelete').attr('href', '/Home/Delete/' + buttonData);
+    });
 
 $("#btnClearFilter").click(function(){
         $("input[type='search']").val('');
