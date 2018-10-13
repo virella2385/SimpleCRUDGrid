@@ -1,0 +1,83 @@
+@model EditExpenseVM
+
+
+
+<form method="post" action="/Edit/SaveForm">
+	<div>
+		<h1>Expenses - Edit</h1>
+	</div>
+	<input type="hidden" asp-for="@Model.expenseId" />
+	<div class="form-group">
+		<label asp-for="@Model.expenseDate"></label>
+		<input type="date" class="form-control" id="txtExpenseDate" style="width:15%;" asp-for="@Model.expenseDate" />
+		<span asp-validation-for="@Model.expenseDate"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="@Model.expenseName"></label>
+		<input type="text" class="form-control" style="width:15%;" asp-for="@Model.expenseName" />
+		&nbsp;
+		<span asp-validation-for="@Model.expenseName"></span>
+	</div>
+	<div class="form-group">
+		<label>Select a customer</label>
+		<select asp-for="@Model.customerId" asp-items="@Model.customers" onchange="getProjects();"></select>
+		<span asp-validation-for="@Model.customerId"></span>
+	</div>
+	<div class="form-group">
+	<label>Select a project</label>
+	<select asp-for="@Model.projectId" asp-items="@Model.projects"></select>
+	<span asp-validation-for="@Model.projectId"></span>
+</div>
+	<div class="form-group">
+		<label asp-for="@Model.expenseAmount"></label>
+		<input type="number" class="form-control" style="width:15%;" asp-for="@Model.expenseAmount" />
+		<span asp-validation-for="@Model.expenseAmount"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="@Model.expenseDescription"></label>
+		<textarea class="form-control" style="width:36%;" asp-for="@Model.expenseDescription"></textarea>
+	</div>
+
+
+
+
+<div>
+
+<input type="submit" class="btn btn-success" value="Save" name="btnSave" id="btnSave"/>
+
+&nbsp;
+<input type="submit" class="btn btn-primary" value="Apply" name="btnSave" id="btnSave"/>
+&nbsp;
+<button class="btn btn-default" asp-action="Index">Cancel</button>
+</form>
+
+<script type="text/javascript">
+//$(document).load(function(){
+	//getProjects();
+//});
+
+	function getProjects(){
+		var cid = $("#customerId").find(":selected").val();
+		$.getJSON("/Edit/GetProjects", { id : cid}, function(data){
+			console.log('onload call');
+			// Removing the options tags to clear the select tag and refill it
+			$("select[id='projectId'] > option").remove();
+			if(data.length > 0) {
+				$.each(data, function(key, value) {
+					if(value.projectId == cid) {
+						$("<option selected value='" + value.projectId + "'>" + value.projectName + "</option>").appendTo("select[id='projectId']");
+					} else {
+						$("<option value='" + value.projectId + "'>" + value.projectName + "</option>").appendTo("select[id='projectId']");
+					}
+				});
+			} else {
+				$("<option>Select a customer first</option>").appendTo("select[id='projectId']");
+			}
+		});
+	}
+
+	function reloadDDL(){
+		var cid = $("#Model_customerId").find(":selected").val();
+		location.pathname = "/Edit/@Html.Raw(@Model.expenseId)/" + cid;
+	}
+</script>
