@@ -18,6 +18,8 @@ namespace SimpleCRUDGridWebApp.Data
                     p.Property(c => c.Amount).HasColumnType("decimal(18,2)");
                 });
 
+            modelBuilder.Entity<Expense>().HasOne(p =>p.Project).WithMany(e => e.Expenses).HasForeignKey(p => p.ProjectId);
+
         }
 
         public DbSet<Customer> Customers { get; set; }

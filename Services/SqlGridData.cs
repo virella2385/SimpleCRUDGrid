@@ -42,14 +42,14 @@ namespace SimpleCRUDGridWebApp.Services
 
     	public Expense UpdateExpense(Expense newExpense)
     	{
-            _context.Expenses.Remove(newExpense);
+            /*_context.Expenses.Remove(newExpense);
             _context.SaveChanges();
             newExpense.ExpenseId = new int();
             _context.Expenses.Add(newExpense);
-            _context.SaveChanges();
+            _context.SaveChanges();*/
 
-    		/*_context.Expenses.Attach(newExpense).State = EntityState.Modified;
-    		_context.SaveChanges();*/
+    		_context.Expenses.Attach(newExpense).State = EntityState.Modified;
+    		_context.SaveChanges();
     		return newExpense;
     	}
 

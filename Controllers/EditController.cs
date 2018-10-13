@@ -61,7 +61,6 @@ namespace SimpleCRUDGridWebApp.Controllers
         [HttpPostAttribute]
         public IActionResult SaveForm(EditExpenseVM editExpense, string btnSave) 
         {
-        	//return new JsonResult(editExpense);
         	if (ModelState.IsValid) {
         		Expense modifiedExpense = new Expense();
         		modifiedExpense = _data.GetExpense(editExpense.expenseId);
@@ -69,8 +68,8 @@ namespace SimpleCRUDGridWebApp.Controllers
         		modifiedExpense.ExpenseName = editExpense.expenseName;
         		modifiedExpense.ExpenseId = editExpense.expenseId;
         		modifiedExpense.Description = editExpense.expenseDescription;
-        		modifiedExpense.Project.ProjectId = editExpense.projectId;
-        		modifiedExpense.Project.Customer.CustomerId = editExpense.customerId;
+        		modifiedExpense.ProjectId = editExpense.projectId;
+        		//modifiedExpense.Project.Customer.CustomerId = editExpense.customerId;
 				_data.UpdateExpense(modifiedExpense);
 
 				if (btnSave.ToLower() == "save")
@@ -86,7 +85,7 @@ namespace SimpleCRUDGridWebApp.Controllers
 	        			//return new JsonResult("apply");
 	        	}*/
 	        }
-	        return View();
+	        return RedirectToAction("Index", new { id = editExpense.expenseId });
         }
 
         [HttpGetAttribute]
