@@ -21,7 +21,7 @@
     {
         <tr>
             <td>
-                <a asp-page="/Edit" asp-route-id="@exp.ExpenseId">edit</a>
+                <a asp-controller="Edit" asp-action="Index" asp-route-id="@exp.ExpenseId">edit</a>
             </td>
             <td>
             @exp.ExpenseDate
