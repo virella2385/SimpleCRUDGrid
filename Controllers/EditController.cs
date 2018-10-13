@@ -9,7 +9,6 @@ namespace SimpleCRUDGridWebApp.Controllers
 {
     public class EditController : Controller
     {
-        //public List<SelectListItem> customers { get; set; }
         private ISqlGridData _data;
 
         public EditController(ISqlGridData data)
@@ -20,7 +19,6 @@ namespace SimpleCRUDGridWebApp.Controllers
         public IActionResult Index(int id)
         {
             EditExpenseVM editExpense = new EditExpenseVM();
-            //editExpense = _data.GetExpense(id);
 
             Expense currentExpense = new Expense();
             currentExpense = _data.GetExpense(id);
@@ -34,7 +32,6 @@ namespace SimpleCRUDGridWebApp.Controllers
             editExpense.customers = new List<SelectListItem>();
             editExpense.projects = new List<SelectListItem>();
 
-            //List<SelectListItem> customers = new List<SelectListItem>();
             editExpense.customers.Add(new SelectListItem { Text = "Select a customer" });
             foreach (Customer cust in _data.GetCustomers())
             {
@@ -44,8 +41,7 @@ namespace SimpleCRUDGridWebApp.Controllers
                     Value = cust.CustomerId.ToString()
                 });
             }
-
-            //List<SelectListItem> projects = new List<SelectListItem>();
+            
             editExpense.projects.Add(new SelectListItem { Text = "Select a project" });
             foreach (Project proj in _data.GetProjects(editExpense.customerId))
             {
@@ -69,21 +65,13 @@ namespace SimpleCRUDGridWebApp.Controllers
         		modifiedExpense.ExpenseId = editExpense.expenseId;
         		modifiedExpense.Description = editExpense.expenseDescription;
         		modifiedExpense.ProjectId = editExpense.projectId;
-        		//modifiedExpense.Project.Customer.CustomerId = editExpense.customerId;
+
 				_data.UpdateExpense(modifiedExpense);
 
 				if (btnSave.ToLower() == "save")
 				{
 					return RedirectToAction("Index", "Home");
 				}
-	        	/*switch (btnSave.ToLower())
-	        	{
-	        		case "save": return RedirectToAction("Index", "Home");
-	        			//return new JsonResult("save");
-	        		default: return return
-
-	        			//return new JsonResult("apply");
-	        	}*/
 	        }
 	        return RedirectToAction("Index", new { id = editExpense.expenseId });
         }

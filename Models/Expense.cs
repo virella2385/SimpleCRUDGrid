@@ -25,7 +25,6 @@ namespace SimpleCRUDGridWebApp.Models
         [RequiredAttribute]
         public int ProjectId { get; set; }
 
-        [RequiredAttribute]
         public Project Project { get; set; }
     }
 }

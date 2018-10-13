@@ -52,14 +52,9 @@
 </form>
 
 <script type="text/javascript">
-//$(document).load(function(){
-	//getProjects();
-//});
-
 	function getProjects(){
 		var cid = $("#customerId").find(":selected").val();
 		$.getJSON("/Edit/GetProjects", { id : cid}, function(data){
-			console.log('onload call');
 			// Removing the options tags to clear the select tag and refill it
 			$("select[id='projectId'] > option").remove();
 			if(data.length > 0) {
