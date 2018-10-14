@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System;
+
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using SimpleCRUDGridWebApp.Models;
@@ -23,7 +24,7 @@ namespace SimpleCRUDGridWebApp.Controllers
             return View(viewModel);
         }
 
-        public IActionResult About()
+       /* public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
 
@@ -40,7 +41,7 @@ namespace SimpleCRUDGridWebApp.Controllers
         public IActionResult Privacy()
         {
             return View();
-        }
+        }*/
 
         public IActionResult Delete(int id)
         {

@@ -68,7 +68,11 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
-    var table = $('#grid').DataTable();
+    var table = $('#grid').DataTable(
+        {
+             "order": [[1, 'desc']],
+            "columns":[{"orderable": false}, null, null, null, null, {"orderable": false}]
+         });
     $( "input[type='search']").addClass( "form-control" ).attr("placeholder", "type to search");
     //$( "#grid_filter").addClass( "form-group form-inline" )
     $( "#grid_filter").append("<button type='button' class='btn btn-danger' style='margin-left:15px;' id='btnClearFilter' name='btnClearFilter'>Clear</button>")
