@@ -4,7 +4,7 @@
     ViewBag.Title = "Home Page";
 }
 
-<a class='btn btn-success' style='margin-left:15px;' id='btnAdd' asp-page='/Add' name='btnAdd'>Add</a>
+<a class='btn btn-success' style='margin-left:15px;' id='btnAdd' asp-controller='Create' name='btnAdd'>Add</a>
 <table id="grid" name="grid" class="table table-striped table-bordered" style="width:100%;">
     <thead>
             <tr>
@@ -21,7 +21,7 @@
     {
         <tr>
             <td>
-                <a asp-controller="Edit" asp-action="Index" asp-route-id="@exp.ExpenseId">edit</a>
+                <a asp-controller="Edit" asp-route-id="@exp.ExpenseId">edit</a>
             </td>
             <td>
             @exp.ExpenseDate

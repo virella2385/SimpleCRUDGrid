@@ -23,11 +23,6 @@ namespace SimpleCRUDGridWebApp.Controllers
             return View(viewModel);
         }
 
-        public JsonResult GetTestJson()
-        {
-            return new JsonResult(_sqlData.GetCustomers());
-        }
-
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";

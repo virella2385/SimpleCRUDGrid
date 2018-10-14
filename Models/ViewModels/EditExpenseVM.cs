@@ -22,6 +22,7 @@ namespace SimpleCRUDGridWebApp.Models.ViewModels
         public string expenseName { get; set; }
 
         [RequiredAttribute]
+        [DataType(DataType.Currency)]
         [DisplayAttribute(Name = "Amount")]
         public decimal expenseAmount { get; set; }
 

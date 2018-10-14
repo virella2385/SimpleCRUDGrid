@@ -8,12 +8,12 @@ namespace SimpleCRUDGridWebApp.Models
         public int ExpenseId { get; set; }
 
         [Required]
-        [DisplayAttribute(Name = "Expense Name")]
+        [DisplayAttribute(Name = "Name")]
         public string ExpenseName { get; set; }
 
         [Required]
         [DataType(DataType.Date)]
-        [DisplayAttribute(Name = "Expense Date")]
+        [DisplayAttribute(Name = "Date")]
         public DateTime ExpenseDate { get; set; }
 
         [Required]
