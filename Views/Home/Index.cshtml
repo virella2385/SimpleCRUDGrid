@@ -70,10 +70,10 @@
     $(document).ready(function() {
     var table = $('#grid').DataTable();
     $( "input[type='search']").addClass( "form-control" ).attr("placeholder", "type to search");
-    $( "#grid_filter").addClass( "form-group form-inline" )
-    .append("<button type='button' class='btn btn-danger' style='margin-left:15px;' id='btnClearFilter' name='btnClearFilter'>Clear</button>")
+    //$( "#grid_filter").addClass( "form-group form-inline" )
+    $( "#grid_filter").append("<button type='button' class='btn btn-danger' style='margin-left:15px;' id='btnClearFilter' name='btnClearFilter'>Clear</button>")
     .append("<a class='btn btn-success' style='margin-left:15px;' id='btnAdd' href='/Create' name='btnAdd'>Add</a>");
-    $('#grid_wrapper').attr('style', 'width:100%;margin-top:2%;');
+    $('#grid_wrapper').attr('style', 'width:100%;margin-top:5%;');
 
     $('#exampleModal').on('show.bs.modal', function (event) {
         var button  = $(event.relatedTarget);
