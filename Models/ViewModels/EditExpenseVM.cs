@@ -23,6 +23,7 @@ namespace SimpleCRUDGridWebApp.Models.ViewModels
 
         [RequiredAttribute]
         [DataType(DataType.Currency)]
+        [Range(0.01, 1000000.00, ErrorMessage = "Amount must be between 0.01 and 1000000.00")]
         [DisplayAttribute(Name = "Amount")]
         public decimal expenseAmount { get; set; }
 
