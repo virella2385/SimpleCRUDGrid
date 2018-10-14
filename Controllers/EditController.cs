@@ -10,6 +10,7 @@ namespace SimpleCRUDGridWebApp.Controllers
     public class EditController : Controller
     {
         private ISqlGridData _data;
+        private List<SelectListItem> _customers, _projects;
 
         public EditController(ISqlGridData data)
         {
@@ -32,48 +33,72 @@ namespace SimpleCRUDGridWebApp.Controllers
             editExpense.customers = new List<SelectListItem>();
             editExpense.projects = new List<SelectListItem>();
 
-            editExpense.customers.Add(new SelectListItem { Text = "Select a customer" });
+            FillDropDownLists(ref _customers, ref _projects, editExpense.customerId);
+
+            editExpense.customers = _customers;
+            editExpense.projects = _projects;
+
+            return View(editExpense);
+        }
+
+        private void FillDropDownLists(ref List<SelectListItem> customers, ref List<SelectListItem> projects, int id)
+        {
+            customers = new List<SelectListItem>();
+            customers.Add(new SelectListItem { Text = "Select a customer" });
             foreach (Customer cust in _data.GetCustomers())
             {
-                editExpense.customers.Add(new SelectListItem
+                customers.Add(new SelectListItem
                 {
                     Text = cust.CustomerName,
                     Value = cust.CustomerId.ToString()
                 });
             }
-            
-            editExpense.projects.Add(new SelectListItem { Text = "Select a project" });
-            foreach (Project proj in _data.GetProjects(editExpense.customerId))
+
+            projects = new List<SelectListItem>();
+            /*    if (id != null)
+                {*/
+            projects.Add(new SelectListItem { Text = "Select a project" });
+            foreach (Project proj in _data.GetProjects(id))
             {
-                editExpense.projects.Add(new SelectListItem
+                projects.Add(new SelectListItem
                 {
                     Text = proj.ProjectName,
                     Value = proj.ProjectId.ToString()
                 });
             }
-            return View(editExpense);
+            //}
+            /* else
+             {
+                 projects.Add(new SelectListItem { Text = "Select a customer first" });
+             }*/
         }
 
         [HttpPostAttribute]
-        public IActionResult SaveForm(EditExpenseVM editExpense, string btnSave) 
+        public IActionResult SaveForm(EditExpenseVM editExpense, string btnSave)
         {
-        	if (ModelState.IsValid) {
-        		Expense modifiedExpense = new Expense();
-        		modifiedExpense = _data.GetExpense(editExpense.expenseId);
-        		modifiedExpense.Amount = editExpense.expenseAmount;
-        		modifiedExpense.ExpenseName = editExpense.expenseName;
-        		modifiedExpense.ExpenseId = editExpense.expenseId;
-        		modifiedExpense.Description = editExpense.expenseDescription;
-        		modifiedExpense.ProjectId = editExpense.projectId;
+            if (ModelState.IsValid)
+            {
+                Expense modifiedExpense = new Expense();
+                modifiedExpense = _data.GetExpense(editExpense.expenseId);
+                modifiedExpense.Amount = editExpense.expenseAmount;
+                modifiedExpense.ExpenseName = editExpense.expenseName;
+                modifiedExpense.ExpenseId = editExpense.expenseId;
+                modifiedExpense.Description = editExpense.expenseDescription;
+                modifiedExpense.ProjectId = editExpense.projectId;
 
-				_data.UpdateExpense(modifiedExpense);
+                _data.UpdateExpense(modifiedExpense);
 
-				if (btnSave.ToLower() == "save")
-				{
-					return RedirectToAction("Index", "Home");
-				}
-	        }
-	        return RedirectToAction("Index", new { id = editExpense.expenseId });
+                if (btnSave.ToLower() == "save")
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+
+            FillDropDownLists(ref _customers, ref _projects, editExpense.customerId);
+            editExpense.customers = _customers;
+            editExpense.projects = _projects;
+
+            return View("Index", editExpense);
         }
 
         [HttpGetAttribute]
@@ -82,7 +107,7 @@ namespace SimpleCRUDGridWebApp.Controllers
             return new JsonResult(_data.GetProjects(id));
         }
 
-         [HttpGetAttribute]
+        [HttpGetAttribute]
         public JsonResult GetExpense()
         {
             return new JsonResult(_data.GetExpense(1));
