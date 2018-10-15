@@ -62,34 +62,6 @@ namespace SimpleCRUDGridWebApp.Controllers
             addExpense.customers = _customers;
             addExpense.projects = _projects;
 
-        /*    addExpense.customers.Add(new SelectListItem { Text = "Select a customer" });
-            foreach (Customer cust in _data.GetCustomers())
-            {
-                addExpense.customers.Add(new SelectListItem
-                {
-                    Text = cust.CustomerName,
-                    Value = cust.CustomerId.ToString()
-                });
-            }
-
-            addExpense.projects = new List<SelectListItem>();
-            if (id != null)
-            {
-                addExpense.projects.Add(new SelectListItem { Text = "Select a project" });
-                foreach (Project proj in _data.GetProjects(addExpense.customerId))
-                {
-                    addExpense.projects.Add(new SelectListItem
-                    {
-                        Text = proj.ProjectName,
-                        Value = proj.ProjectId.ToString()
-                    });
-                }
-            }
-            else
-            {
-                addExpense.projects.Add(new SelectListItem { Text = "Select a customer first" });
-            }*/
-
             return View(addExpense);
         }
 

@@ -49,21 +49,6 @@ namespace SimpleCRUDGridWebApp.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        public IActionResult AddExpense()
-        {
-            Expense newExpense = new Expense();
-            newExpense.ExpenseDate = new DateTime(2017, 10, 20);
-            newExpense.ExpenseName = "test expense";
-            newExpense.Amount = 3000.55M;
-            newExpense.Description = "blablabla";
-            //newExpense.Project = new Project();
-            newExpense.ProjectId = 1;
-           /* newExpense.Project.Customer = new Customer();
-            newExpense.Project.Customer.CustomerId = 1;*/
-            _sqlData.AddExpense(newExpense);
-            return RedirectToAction("Index", "Home");
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

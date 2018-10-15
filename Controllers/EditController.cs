@@ -55,8 +55,6 @@ namespace SimpleCRUDGridWebApp.Controllers
             }
 
             projects = new List<SelectListItem>();
-            /*    if (id != null)
-                {*/
             projects.Add(new SelectListItem { Text = "Select a project" });
             foreach (Project proj in _data.GetProjects(id))
             {
@@ -66,11 +64,6 @@ namespace SimpleCRUDGridWebApp.Controllers
                     Value = proj.ProjectId.ToString()
                 });
             }
-            //}
-            /* else
-             {
-                 projects.Add(new SelectListItem { Text = "Select a customer first" });
-             }*/
         }
 
         [HttpPostAttribute]
