@@ -1,6 +1,4 @@
-﻿using System;
-
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using SimpleCRUDGridWebApp.Models;
 using SimpleCRUDGridWebApp.Models.ViewModels;
@@ -12,8 +10,10 @@ namespace SimpleCRUDGridWebApp.Controllers
     {
         private ISqlGridData _sqlData;
         public string sortOrder { get; set; }
-        public HomeController(ISqlGridData sqlData)
+        //private UnitOfWork unitOfWork;
+        public HomeController(ISqlGridData sqlData/*, UnitOfWork unitOfWork*/)
         {
+             //this.unitOfWork = unitOfWork;
             _sqlData = sqlData;
         }
 
@@ -21,6 +21,7 @@ namespace SimpleCRUDGridWebApp.Controllers
         {
             HomeViewModel viewModel = new HomeViewModel();
             viewModel.Expenses = _sqlData.GetExpenses();
+            //viewModel.Expenses = this.unitOfWork.ExpenseRepository.Get(includeProperties: "Project, Customer");
             return View(viewModel);
         }
 
