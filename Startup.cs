@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
+using SimpleCRUDGridWebApp.DAL;
 using SimpleCRUDGridWebApp.Data;
 using SimpleCRUDGridWebApp.Services;
 
@@ -29,6 +30,7 @@ namespace SimpleCRUDGridWebApp
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });*/
+            //services.AddScoped<UnitOfWork>();
             services.AddScoped<ISqlGridData, SqlGridData>();
             services.AddMvc().AddJsonOptions(options =>
                 {
