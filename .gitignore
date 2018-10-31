@@ -3,3 +3,4 @@ obj/
 Migrations/
 oldPages/
 wwwwroot/DataTables_default/
+.vscode/
